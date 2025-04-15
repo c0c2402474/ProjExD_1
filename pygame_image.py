@@ -20,6 +20,7 @@ def main():
             if event.type == pg.QUIT: return
         x = tmr
         screen.blit(bg_img, [-x, 0])#背景移動6
+        screen.blit(bg_img, [-x+1600, 0])#ｂｇ二枚目7
         screen.blit(kk3_img, [300, 200])#こうかとん反映4
         pg.display.update()
         tmr += 1        

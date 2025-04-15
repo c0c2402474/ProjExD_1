@@ -12,6 +12,7 @@ def main():
     bg_img = pg.image.load("fig/pg_bg.jpg")
     kk3_img = pg.image.load("fig/3.png")#こうかとん2
     kk3_img = pg.transform.flip(kk3_img, True, False)#こうかとん反転2
+    bg2_img = pg.transform.flip(bg_img, True, False)#背景反転8
     tmr = 0
     
 
@@ -20,7 +21,7 @@ def main():
             if event.type == pg.QUIT: return
         x = tmr
         screen.blit(bg_img, [-x, 0])#背景移動6
-        screen.blit(bg_img, [-x+1600, 0])#ｂｇ二枚目7
+        screen.blit(bg2_img, [-x+1600, 0])#ｂｇ二枚目7
         screen.blit(kk3_img, [300, 200])#こうかとん反映4
         pg.display.update()
         tmr += 1        

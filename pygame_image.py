@@ -28,8 +28,10 @@ def main():
         if key_lst[pg.K_DOWN]:
             kk3_rct.move_ip((0, 1))
         if key_lst[pg.K_RIGHT]:
-            kk3_rct.move_ip((1, 0))
+            kk3_rct.move_ip((2, 0))
         if key_lst[pg.K_LEFT]:
+            kk3_rct.move_ip((-2, 0))
+        else:
             kk3_rct.move_ip((-1, 0))
         x = tmr % 3200#ループ９
         screen.blit(bg_img, [-x, 0])#背景移動6

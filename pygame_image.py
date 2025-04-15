@@ -10,8 +10,8 @@ def main():
     screen = pg.display.set_mode((800, 600))
     clock  = pg.time.Clock()
     bg_img = pg.image.load("fig/pg_bg.jpg")
-    kk3_img = pg.image.load("fig/3.png")#こうかとん
-    kk3_img = pg.transform.flip(kk_img, True, False)
+    kk3_img = pg.image.load("fig/3.png")#こうかとん2
+    kk3_img = pg.transform.flip(kk3_img, True, False)#こうかとん反転2
     tmr = 0
     
 
@@ -20,6 +20,7 @@ def main():
             if event.type == pg.QUIT: return
 
         screen.blit(bg_img, [0, 0])
+        screen.blit(kk3_img, [300, 200])#こうかとん反映4
         pg.display.update()
         tmr += 1        
         clock.tick(10)

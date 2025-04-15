@@ -19,10 +19,12 @@ def main():
     while True:
         for event in pg.event.get():
             if event.type == pg.QUIT: return
-        x = tmr
+        
+        x = tmr % 3200#ループ９
         screen.blit(bg_img, [-x, 0])#背景移動6
         screen.blit(bg2_img, [-x+1600, 0])#ｂｇ二枚目7
         screen.blit(kk3_img, [300, 200])#こうかとん反映4
+        screen.blit(bg_img, [-x+3200, 0])
         pg.display.update()
         tmr += 1        
         clock.tick(200)#FPS変更５

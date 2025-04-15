@@ -23,7 +23,7 @@ def main():
         screen.blit(kk3_img, [300, 200])#こうかとん反映4
         pg.display.update()
         tmr += 1        
-        clock.tick(10)
+        clock.tick(200)#FPS変更５
 
 
 if __name__ == "__main__":
